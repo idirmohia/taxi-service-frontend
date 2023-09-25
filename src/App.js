@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
+  // Fonction pour gérer la réservation
+  const handleReservation = () => {
+    // Vous pouvez ajouter ici la logique pour gérer la réservation,
+    // par exemple, afficher un formulaire de réservation.
+    alert("Fonction de réservation à implémenter !");
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Ma Application de Réservation de Taxi</h1>
       </header>
+      <main>
+        <p>Bienvenue sur notre plateforme de réservation de taxi.</p>
+        <img src="/chemin-vers-votre-image.jpg" alt="Image d'accueil" />
+        {/* Bouton de réservation */}
+        <button onClick={handleReservation}>Réserver un taxi</button>
+      </main>
     </div>
   );
 }
